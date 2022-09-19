@@ -19,6 +19,7 @@ justify-content: center;
   .mx-2{
     margin-left: 12px;
     margin-right: 12px;
+    cursor: pointer;
   }
   .flex-wrap{
     flex-wrap: wrap;

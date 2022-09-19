@@ -56,14 +56,68 @@ nav ul li{
     text-align: center;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   }
+
+  .prolog{
+    position: absolute;
+    top: 110%; right: -110%;
+    padding: 1 rem;
+    border-radius: .5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 23rem;
+    background-color: white;
+  }
+   .prolog .box{
+   
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 5px;
+  }
+  .prolog.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+  .prolog input[type="text"], .prolog input[type="password"]{
+    
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2.5px solid rgb(11, 51, 91);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 5.5px;
+    transition: 0.25px;
+  }
+  .prolog input[type="submit"]{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(80, 74, 74);
+    color: black;
+    padding: 9px 10px;
+    width: 85px;
+    outline: none;  
+    border-radius: 5.5px;
+    transition: 0.25px;
+    cursor: pointer;
+  }
+  .prolog input[type="submit"]:hover{
+    background: rgb(209, 43, 71);
+    color: #fff;
+  }
   .shopping-cart{
     position: absolute;
     top: 110%; right: -110%;
     padding: 1 rem;
     border-radius: .5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 30rem;
-   
+    width: 30rem;   
     background: #fff;
   }
   .shopping-cart.active{
@@ -90,7 +144,7 @@ nav ul li{
     transform: translateY(-50%);
   }
   .shopping-cart .box .fa-trash:hover{
-    color:rgb(231, 104, 50)
+    color:rgb(198, 66, 154)
   }
   .shopping-cart .box .content h3{
     color:black;
@@ -131,4 +185,5 @@ nav ul li{
     display: block;
     text-align: center;
     margin: 1rem;
+    
   }

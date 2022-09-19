@@ -23,10 +23,19 @@
                 </ul>
             </div>
             <div class="right flex items-center">
-                <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
-                <div class="profile mx-2">Profile</div>
+                <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" >
+                <div class="profile mx-2" id="log-btn">Profile</div>
                 <div class="wishlist mx-2">Wishlist</div>
                 <div class="bag mx-2" id="card-btn">Bag</div>
+
+                
+                    <form class="prolog" action="index.html" method="POST">
+                        <input type="text" name="" placeholder="Enter Username" id="username" class="box">
+                        <input type="password" name="" placeholder="Enter Password" id="password" class="box">
+                        <input type="submit" name="" value="Login" onclick="validate()">                        
+                    </form>
+                
+
                 <div class="shopping-cart">
                     <div class="box">
                         <i class="fas fa-trash"></i>
